@@ -1,0 +1,29 @@
+1. Create react app using Vite:
+    npm create vite@latest ApexTracker
+
+    > create-vite ApexTracker
+
+    │
+    ◇  Package name:
+    │  apextracker
+    │
+    │
+    ◇  Select a variant:
+    │  TypeScript
+
+2. Dependencies:
+    CSS Library:
+    material ui: https://mui.com/material-ui/getting-s...
+
+    Charts and Graphs:
+    nivo charts: https://nivo.rocks/components
+
+    Form Validation: 
+    formik: https://formik.org/docs/overview#inst...
+    yup validation: https://github.com/jquense/yup
+
+    react pro sidebar: https://github.com/azouaoui-med/react...
+    google fonts: https://fonts.google.com/
+    
+    npm install @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router@latest react-pro-sidebar formik yup @nivo/line @nivo/bar @nivo/pie
+
