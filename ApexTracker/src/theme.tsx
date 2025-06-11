@@ -1,9 +1,9 @@
 /*  */
-import { createContext, useState, useMemo } from 'react';
-import { createTheme } from '@mui/material/styles';
+import { createContext, useState, useMemo } from "react";
+import { createTheme } from "@mui/material/styles";
 
 export const tokens = (mode: any) => ({
-    //... spread operator to merge objects
+  //... spread operator to merge objects
   ...(mode === "dark"
     ? {
         grey: {
@@ -161,7 +161,35 @@ export const themeSettings = (mode: any) => {
             background: {
               default: "#fcfcfc",
             },
-        }),
+          }),
+    },
+    typography: {
+      fontFamily: ["Ubuntu", "sans-serif"].join(","),
+      fontSize: 12,
+      h1: {
+        fontFamily: ["Ubuntu", "sans-serif"].join(","),
+        fontSize: 40,
+      },
+      h2: {
+        fontFamily: ["Ubuntu", "sans-serif"].join(","),
+        fontSize: 32,
+      },
+      h3: {
+        fontFamily: ["Ubuntu", "sans-serif"].join(","),
+        fontSize: 24,
+      },
+      h4: {
+        fontFamily: ["Ubuntu", "sans-serif"].join(","),
+        fontSize: 20,
+      },
+      h5: {
+        fontFamily: ["Ubuntu", "sans-serif"].join(","),
+        fontSize: 16,
+      },
+      h6: {
+        fontFamily: ["Ubuntu", "sans-serif"].join(","),
+        fontSize: 14,
+      },
     },
   };
 };

@@ -2,8 +2,8 @@ import { ColorModeContext, useMode } from "./theme"
 import { CssBaseline, ThemeProvider } from "@mui/material"
 
 import Dashboard from "./scenes/dashboard/Dashboard"
-import Topbar from "./scenes/global/TopBar"
-import { Routes, Route } from "react-router";
+import Topbar from "./scenes/global/Topbar"
+import { Routes, Route } from "react-router-dom";
 import SidebarMenu from "./scenes/global/SidebarMenu";
 
 function App() {

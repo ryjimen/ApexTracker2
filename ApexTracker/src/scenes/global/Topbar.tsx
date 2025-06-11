@@ -1,22 +1,21 @@
-
 import { useTheme } from "@mui/material/styles";
-import { useContext } from "react"
-import { ColorModeContext, tokens } from "../../theme"
+import { useContext } from "react";
+import { ColorModeContext, tokens } from "../../theme";
 
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase"
+import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 
 function Topbar() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 
-    return (
+  return (
     <Paper
       sx={{
         display: "flex",
@@ -25,7 +24,7 @@ function Topbar() {
         backgroundColor: colors.primary[400],
         // padding
         p: 2,
-        elevation: 9
+        elevation: 9,
       }}
     >
       <h2 style={{ margin: 0 }}>Tracker</h2>
@@ -41,7 +40,7 @@ function Topbar() {
         }}
       >
         <InputBase sx={{ ml: 1, flex: 1 }} placeholder="Search" />
-        <IconButton type="button" sx = {{p: 1}}>
+        <IconButton type="button" sx={{ p: 1 }}>
           <SearchOutlinedIcon />
         </IconButton>
       </Box>
@@ -60,5 +59,4 @@ function Topbar() {
   );
 }
 
-export default Topbar
-
+export default Topbar;
