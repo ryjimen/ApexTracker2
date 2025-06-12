@@ -14,6 +14,7 @@ import SocialDistanceOutlinedIcon from "@mui/icons-material/SocialDistanceOutlin
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import MenuIcon from "@mui/icons-material/Menu";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const Item = ({ title, to, icon, selected, setSelected }: any) => {
   const theme = useTheme();
@@ -119,7 +120,7 @@ function SidebarMenu() {
             <Item
               title="Settings"
               to="/settings"
-              icon={<SpaceDashboardOutlinedIcon />}
+              icon={<SettingsIcon />}
               selected={selected}
               setSelected={setSelected}
             />
